@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="container center-align">
+      <h1 class="red-text">Emeka's BMI Calculator</h1>
+      <form>
+        <div class="container">
+          <br />
+          <br />
+          <br />
+
+          <div class="input-field">
+            <label class="white-text" for="weight">Weight in KG:</label>
+            <input id="weight" type="number" step="any" />
+          </div>
+
+          <br />
+          <br />
+
+          <div class="input-field center-align">
+            <label class="white-text" for="height">Height in CM:</label>
+            <input id="height" type="number" step="any" />
+          </div>
+
+          <br />
+          <br />
+
+          <div>
+            <input type="submit" class="btn" value="Calculate" />
+          </div>
+
+          <br />
+          <br />
+
+          <div id="loading">
+            <img src="img/loading.gif" alt="" />
+          </div>
+
+          <div id="result">
+            BMI:
+            <div class="input-field inline">
+              <input
+                disabled
+                class="black-text"
+                type="text"
+                name="BMI"
+                id="BMI"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="container footer-copyright">
+      <div class="container">Copyright &copy; 2020</div>
+    </div>
+
+    <style>
+      body {
+        background-color: rgb(97, 151, 72);
+      }
+      #loading,
+      #result {
+        display: none;
+      }
+      .footer-copyright {
+        background-color: rgb(20, 82, 44);
+        padding-bottom: 30px;
+      }
+      form {
+        background-color: rgb(20, 82, 44);
+        padding-bottom: 180px;
+      }
+      .input-field {
+        width: 70%;
+        text-align: center;
+      }
+      .white-text {
+        font-weight: 200px;
+      }
+      .black-text {
+        font-weight: 150px;
+      }
+    </style>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/BMI.js"></script>
+  </body>
+</html>
