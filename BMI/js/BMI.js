@@ -47,7 +47,7 @@ function calculateResults() {
   } else {
     M.toast({
       html:
-        '<h4 class="red-text"> Please check your numbers <i class="material-icons">done</i></h4>',
+        '<h4 class="red-text"> Please check your numbers <i class="material-icons">error</i></h4>',
     });
     document.getElementById('result').style.display = 'none';
     document.getElementById('loading').style.display = 'none';
